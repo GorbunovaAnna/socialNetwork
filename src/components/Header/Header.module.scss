@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    grid-area: header;
+    background-color: rgb(50, 159, 92);
+    &Logo {
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    &Title {
+      color: #fff;
+      text-transform: uppercase;
+    }
+}
+  
