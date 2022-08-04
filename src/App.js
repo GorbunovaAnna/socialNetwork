@@ -9,7 +9,7 @@ import Settings from "./components/Settings/Settings";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
     <div className="wrapper">
        <BrowserRouter>
@@ -18,8 +18,8 @@ function App() {
       <div className="app-wrapper-content">
        
           <Routes>
-            <Route path="/profile" element={<Profile/>} />
-            <Route path="/messages" element={<Messages/>} />
+            <Route path="/profile" element={<Profile postsDate={props.postsDate}/>} />
+            <Route path="/messages" element={<Messages dialogsData={props.dialogsData} lettersData={props.lettersData}/>} />
             <Route path="/news" element={<News/>} />
             <Route path="/music" element={<Music/>} />
             <Route path="/settings" element={<Settings/>} />

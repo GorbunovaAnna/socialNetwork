@@ -8,7 +8,7 @@ function Sidebar() {
     <aside className={styles.sidebar}>
       <ul>
         <li >
-          <NavLink exact  to="/profile" activeClassName={styles.active}>Profile</NavLink>
+          <NavLink  to="/profile" activeClassName={styles.active}>Profile</NavLink>
         </li>
 
         <li>
